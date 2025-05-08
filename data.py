@@ -15,7 +15,7 @@ def get_data_asteroids():
 
 def get_img_day():
     respuesta = requests.get(URL_APOD)
-    date = respuesta.json()
+    datos = respuesta.json()
     
     title = datos["title"]
     image_url = datos["hdurl"]
